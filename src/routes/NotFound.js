@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 export default function NotFound(props) {
     const navigate = useNavigate();
     function handleClick() {
-        navigate("/");
+        navigate(-1);
     }
     return (
         <Container maxWidth="md" sx={{marginTop: "100px"}}>

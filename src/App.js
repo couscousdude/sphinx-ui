@@ -13,6 +13,8 @@ import Root from "./routes/Root";
 import SignUp from './routes/SignUp';
 import SignIn from './routes/SignIn';
 import NotFound from './routes/NotFound';
+import Terms from './routes/Terms';
+import PrivacyPolicy from './routes/PrivacyPolicy';
 
 
 function App() {
@@ -23,6 +25,8 @@ function App() {
         <Route path="/signup" element={<SignUp />} />
         <Route path="/signin" element={<SignIn />} />
         <Route path="/notfound" element={<NotFound />} />
+        <Route path="/terms" element={<Terms />} />
+        <Route path="/privacypolicy" element={<PrivacyPolicy />} />
         <Route path="*" element={<Navigate to="/notfound" />} />
       </Routes>
     </BrowserRouter>
